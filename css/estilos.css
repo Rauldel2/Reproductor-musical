@@ -1,0 +1,144 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/bg.png);
+    overflow-x: hidden;
+}
+
+header{
+    overflow: hidden;
+    height: 1%;
+    padding-bottom: 0.5em;
+}
+
+header, footer{
+    width: 100vw;
+    /*height: 10vh;*/
+    background-color: #555555;
+    color: white;
+}
+
+main{
+    width: 80vw;
+    /*height: 1%;*/
+    min-height: 80vh;
+    background-color: #DADAD4;
+    margin: 0 auto;
+    padding-top: 1em;
+    /*display: flex;*/
+    /*flex-flow: column nowrap;*/
+    /*justify-content: center;*/
+}
+
+main #contenedor{
+    /*flex: 0 1 auto;*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+main>#contenedor>*{
+    flex: 0 1 auto;
+}
+
+main>#contenedor>section#reproductor{
+    /*width: 800px;*/
+    flex-grow: 3;
+    height: 450px;
+    margin-left: 1em;
+}
+
+section#reproductor>#cover{
+    height: inherit;
+    background-color: white;
+}
+
+main>#contenedor>aside{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    margin: 0 1em;
+    /*margin-right: 1em;*/
+    background-color: goldenrod;
+    max-width: 20vw;
+    min-height: 128px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 100%;
+}
+
+.img_cover{
+    width: 100%;
+    /*height: inherit;*/
+    height: inherit;
+}
+
+.thumbnail{
+    flex: 0 1 auto;
+    /*max-width: 256px;*/
+    height: 100px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.thumbnail>*{
+    flex: 0 1 auto;
+    /*position: relative;*/
+    /*height: 100px;*/
+}
+
+.thumbnail>img{
+    width: 100px;
+    margin-left: 1em;
+    /*position: absolute;*/
+}
+.thumbnail>.interprete{
+    width: 100%;
+    margin: 0 1em;
+    overflow-x: hidden;
+}
+
+.interprete{
+    font-size: 0.8em;
+}
+
+#cover{
+    position: relative;
+}
+
+.fullCenter{
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.controles{
+    /*color: black;*/
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+.play{
+    background-image: url("../img/play.png");
+}
+.stop{
+    background-image: url("../img/stop.png");
+}
+/*@media all and (max-width: 1280px){*/
+    /*main section{*/
+        /*width: 400px;*/
+        /*height: 275px;*/
+        /*background-color: white;*/
+    /*}*/
+/*}*/

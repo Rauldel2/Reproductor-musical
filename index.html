@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reproductor musical HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>REPRODUCTOR DE MÚSICA HTML5</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 text-center">
+                <input type="text" class="form-control" placeholder="Buscador"/>
+            </div>
+            <div class="col-2 text-center">
+                <button type="button" class="btn btn-default" onclick="search()">Buscar</button>
+            </div>
+        </div>
+        <!--<div class="row">-->
+            <!--<div class="col-7 text-center">-->
+                <!--<div id="caratula" ondrop="drop(event)"></div>-->
+            <!--</div>-->
+            <!--<div class="col-5 text-center lista">-->
+                <!---->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</header>
+<main>
+    <div id="contenedor">
+        <section id="reproductor">
+            <div id="cover" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="fullCenter controles"></div>
+            </div>
+            <div id="reproduciendoAhora"></div>
+        </section>
+        <aside class="lista">
+
+        </aside>
+    </div>
+</main>
+<footer>
+
+</footer>
+<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendors/jquery/dist/jquery.min.js"></script>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

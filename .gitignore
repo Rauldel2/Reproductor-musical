@@ -1,0 +1,5 @@
+node_modules/
+README.md
+vendors/
+package-lock.json
+.idea/
