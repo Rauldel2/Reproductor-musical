@@ -45,25 +45,10 @@ function drop(ev){
       (titulo.length > 0 ? titulo : "Sin título") + "</h3>");
 
     $(".fullCenter").first().empty();
-    //TODO
-    // $(".img_cover").first().on("mouseover", function () {
-    //   if(player.isPlaying()){
-    //     // var shit = $("#cover").find($(".fullCenter"));
-    //     // console.log(shit);
-    //     playStopCont.remove();
-    //     $(".fullCenter").first().append('<span class="stop controles"></span>');
-    //
-    //   } else{
-    //     playStopCont.remove();
-    //     $(".fullCenter").first().append('<span class="play controles"></span>');
-    //   }
-    // })
+
   }).catch(function(err){
     conosole.error(err);
   })
-  // SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
-  //   console.log('oEmbed response: ', oEmbed);
-  // });
 }
 
 function onDragEnter(ev) {
